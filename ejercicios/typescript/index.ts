@@ -29,8 +29,8 @@
 
 // console.log(rect.toString());
 
-console.log('it works')
+// console.log('it works')
 
-function add(a: number, b: number) {
+// function add (a: number, b: number) {
 
-}
+// }

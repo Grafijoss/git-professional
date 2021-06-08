@@ -23,6 +23,7 @@ Es un servidor
 
 
 - Config: para que funcione con la ultima version de chrome
+- -  para que transpile con la ultima versión de chrome se pueden incluir otras versiones o navegadores
 
 ```
 "browserlist": [
@@ -30,5 +31,6 @@ Es un servidor
 ]
 ```
 
+- Eb caso de que no funcione podemos borrar estos archivos de cache y reiniciar el servidor
 - Borrar archivos:
 - -  rm -rf .cache dist
