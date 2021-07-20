@@ -26,7 +26,7 @@ En javascript le podemos asignar a un array cualquier tipo de información pero 
 ### Enum
 ***
 
-Es un conjunto de valores estrictos, solo s epueden usar los valores que se definen, una variable que esta denotada que un tipo de enum no puede usar otro tipo
+Es un conjunto de valores estrictos, solo se pueden usar los valores que se definen, una variable que esta denotada que un tipo de enum no puede usar otro tipo
 
 - El enum se define como un objeto pero los valores se asignan a los campos con = en luhgar de :
 - Los campos no se llaman directamente, se llaman a travez del on bjeto padre

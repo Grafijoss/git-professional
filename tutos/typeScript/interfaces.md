@@ -5,3 +5,11 @@ Las interfaces nos permiten declarar la forma de un objeto, esto nos ayuda con e
 
 - Para definir las interfaces usamos la parabra reservada interface
 - Cuando declaramos una interface la podemos usar como si fuera un type
+
+```javascript
+interface Rectangulo {
+    color?: colorRectangulo,
+    height: number,
+    width: number,
+}
+```
