@@ -20,16 +20,13 @@ self.addEventListener('fetch', event => {
 
 async function precache() {
   const cache = await caches.open(VERSION);
-  // podemos comentar estos archivos por que con parecel cuando los pasa a dist
-  // les agrega un hash unico el cual no sabemos
-  // pero cuando hacemos el fetch guardamos los archivos y no hay problema
   return cache.addAll([
     // '/',
     // '/index.html',
     // '/assets/index.js',
     // '/assets/MediaPlayer.js',
     // '/assets/plugins/AutoPlay.js',
-    // '/assets/plugins/AutoPause.js',
+    // '/assets/plugins/AutoPause.ts',
     // '/assets/index.css',
     // '/assets/BigBuckBunny.mp4',
   ]);
