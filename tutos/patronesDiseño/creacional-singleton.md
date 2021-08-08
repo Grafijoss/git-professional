@@ -3,7 +3,7 @@
 
 Te asegura que una clase solo tiene una instancia
 
-Esta unica instancia puede ser consumida por cualwuier objeto
+Esta unica instancia puede ser consumida por cualquier objeto
 
 - El constructor es privado
 - El constructor tiene el mismo nombre de la clase

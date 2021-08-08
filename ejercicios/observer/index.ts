@@ -7,13 +7,13 @@ interface Subject {
   unsubscribe: (observer: Observer) => void;
 }
 
-class BitcoinPrice implements Subject {
+class BitcoinPrice implements Subject { // subject
   observers: Observer[] = [];
 
   constructor() {
     const el: HTMLInputElement = document.querySelector('#value');
     el.addEventListener('input', () => {
-      this.notify(el.value);
+      this.notify(el.value); // notifica a todos los usuarios
     });
   }
 
@@ -23,18 +23,18 @@ class BitcoinPrice implements Subject {
 
   unsubscribe(observer: Observer) {
     const index = this.observers.findIndex(obs => {
-      return obs === observer;
+      return obs === observer; // regresa el indice del observer
     });
 
-    this.observers.splice(index, 1);
+    this.observers.splice(index, 1); // elimina un observer desde el indice
   }
 
-  notify(data: any) {
+  notify(data: any) { // notifica a todos los observers
     this.observers.forEach(observer => observer.update(data));
   }
 }
 
-class PriceDisplay implements Observer {
+class PriceDisplay implements Observer { // observer
   private el: HTMLElement;
 
   constructor() {
@@ -46,9 +46,11 @@ class PriceDisplay implements Observer {
   }
 }
 
-const value = new BitcoinPrice();
-const display = new PriceDisplay();
+// creamos instancias para el object y observer para subscribirlas
+
+const value = new BitcoinPrice(); // subject
+const display = new PriceDisplay(); // observer
 
 value.subscribe(display);
 
-setTimeout(() => value.unsubscribe(display), 5000);
+setTimeout(() => value.unsubscribe(display), 5000); // unsubscribe
