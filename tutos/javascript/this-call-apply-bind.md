@@ -46,7 +46,7 @@ angela.saludar()
 ## call, apply, bind
 ***
 
-this no se puede asignar directamente peor existen metodos que son parte de function que nos ayudan a establecer cual va a ser el contexto de this en la llamada de una funcion
+this no se puede asignar directamente pero existen metodos que son parte de function que nos ayudan a establecer cual va a ser el contexto de this en la llamada de una funcion
 
 ### call
 ***
@@ -54,7 +54,7 @@ this no se puede asignar directamente peor existen metodos que son parte de func
 - en este caso no estamos dentro de un objeto ni tampoco una clase
 - por medio de call podemos asignarle el this a la función
 - le pasamos un objeto que va a ser el contexto de this como primer parametro
-- **C**all: se se para por **C**omas
+- **C**all: se separa por **C**omas
 
 ```javascript
 function saludar() {
@@ -82,7 +82,7 @@ caminar(richard, 400, 'norte')
 ### apply
 ***
 
-Es similar a call pero los parametros de la función se pasan dentro de una arreglo y s emanda a llamar la funcion inmediatamente
+Es similar a call pero los parametros de la función se pasan dentro de una arreglo y se mandan a llamar la funcion inmediatamente
 
 - ***A***pply: **A**rreglo
 - la funcion se manda a llamar inmediatamente
@@ -95,7 +95,7 @@ caminar(richard, [600, 'sur'])
 ### bind
 ***
 
-No va a llamar la función directamente, si no que va a construir una nueva función y el this va a estar integrado
+No va a llamar la función directamente, si no que va a construir una nueva call y el this va a estar integrado
 
 
 ```javascript
