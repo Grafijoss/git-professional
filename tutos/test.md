@@ -18,12 +18,17 @@ fullName(person) {
 return `${person.firstName} ${person.lastName}`;
 }
 ```
-***Bloque*** WRONG function?
+***Bloque*** WRONG
+***Funcion*** ***OK***
 >https://platzi.com/clases/1642-javascript-profesional/22159-scope/
 
 4. ¿Cómo se define mejor qué es un patrón de diseño?
 
 ***Una lista de pasos a seguir para resolver problemas comunes en diseño de software.*** **WRONG**
+***Un algoritmo eficiente para resolver un tipo de problema.*** **WRONG**
+***Una solución para un problema.*** **WRONG**
+***Una solución para un problema dentro de un contexto.*** **OK**
+
 > https://platzi.com/clases/1642-javascript-profesional/22184-que-es-un-patron-de-diseno/
 
 5. Tienes un estado global y varios objetos que quieren enterarse de cambios al estado. ¿Qué patrón usarías?
@@ -37,6 +42,8 @@ return `${person.firstName} ${person.lastName}`;
 7. ¿Cómo pasamos los argumentos a una función utilizando bind?
 
 ***Con un objeto donde cada key es el nombre del argumento, y el valor es el valor que queremos pasar.*** **WRONG**
+***Separando cada argumento con una coma..*** **OK**
+
 >https://platzi.com/clases/1642-javascript-profesional/22163-los-metodos-call-apply-y-bind/
 
 
@@ -55,6 +62,7 @@ return `${person.firstName} ${person.lastName}`;
 11. ¿Qué queue tiene mayor prioridad?
 
 ***Tasks*** **WRONG**
+***MicroTasks*** **OK**
 >https://platzi.com/clases/1642-javascript-profesional/22169-event-loop/
 
 12. ¿Qué nuevo API del DOM nos ayuda a saber, de forma eficiente, si un elemento se encuentra dentro del viewport?
@@ -69,13 +77,18 @@ return `${person.firstName} ${person.lastName}`;
 
 ```javascript
 { get answer = 42 } // WRONG
+{ answer = get() { return 42 } } // WRONG
+{ get answer = () => 42 } // WRONG
 ```
 > https://platzi.com/clases/1642-javascript-profesional/22171-getters-y-setters/
 
 15. ¿Cuál de estos es el objeto que heredaran las "instancias" de un objeto?
+***__proto__*** WRONG
+***prototype*** OK
+
 > https://platzi.com/clases/1642-javascript-profesional/22165-herencia-prototipal/
 
-***__proto__*** WRONG
+
 
 16. ¿En qué categoría encontramos al patrón de diseño Observer?
 
@@ -84,6 +97,8 @@ return `${person.firstName} ${person.lastName}`;
 17. ¿Cuál es la diferencia entre var y let al ser declaradas en una función?
 
 ***var tiene global scope y let tiene block scope.*** **WRONG**
+***var tiene global scope y let tiene function scope.*** **WRONG**
+***var tiene function scope y let tiene block scope.*** **OK**
 > https://platzi.com/clases/1642-javascript-profesional/22159-scope/
 
 18.¿Con qué keyword un generator puede detener su ejecución?
@@ -97,7 +112,7 @@ return `${person.firstName} ${person.lastName}`;
 20. Quieres extender el comportamiento de una clase sin modificar su implementación. ¿Qué patrón de diseño te puede ayudar?
 
 ***Decorator***
-
+bo
 21. Considera el código
 
 ```javascript
@@ -108,6 +123,9 @@ import MediaPlayer from '@sparragus/platzimediaplayer'
 ¿Cuál propiedad del package.json define el archivo de la biblioteca que sería importado?
 
 ***dependencies*** **WRONG**
+***name*** **WRONG**
+***main*** **OK**
+> https://platzi.com/clases/1642-javascript-profesional/22194-publicar-en-npm/
 
 22. ¿Qué atributo usamos cuando queremos que la petición de un script sea asíncrona pero que tan pronto termine de cargar, el script se ejecute?
 
@@ -116,6 +134,8 @@ import MediaPlayer from '@sparragus/platzimediaplayer'
 23. ¿Qué es un closure?
 
 ***Cuando una función llama otra función.*** ***WRONG***
+***Cuando regresamos el valor de una variables que fue declarada en una función..*** ***WRONG***
+***Cuando una función mantiene las variables que fueron declaras fuera de su scope.*** ***OK***
 > https://platzi.com/clases/1642-javascript-profesional/22160-closures/
 
 24. Necesitas una clase de la cual solo exista una instancia. ¿Qué patrón usarías?
@@ -133,6 +153,7 @@ import MediaPlayer from '@sparragus/platzimediaplayer'
 27. ¿Cómo pasamos los argumentos a una función utilizando apply?
 
 ***Con un objeto donde cada key es el nombre del argumento, y el valor es el valor que queremos pasar.*** **WRONG**
+***Con un arreglo donde cada argumento es un elemento.*** **OK**
 
 28. ¿Qué pasa cuando tres de las promesas en Promise.race se resuelven?
 
